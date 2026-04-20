@@ -4,15 +4,17 @@ import { Route, Routes } from 'react-router-dom'
 import Login from './Pages/Login'
 import Signup from './Pages/Signup'
 import Home from './Pages/Home'
+import Dashboard from './Pages/Admin/Dashboard'
 
 function App() {
   return (
     <>
-      <Header />
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/login' element={<Login />} />
-        <Route path='/signup' element={<Signup />} />
+        <Route path='/' element={<><Header /><Home /></>} />
+        <Route path='/login' element={<><Header /><Login /></>} />
+        <Route path='/signup' element={<><Header /><Signup /></>} />
+        <Route path='/dashboard' element={<Dashboard />} />
+
       </Routes>
     </>
   )

@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom'
 function Header() {
     return (
         <>
-            <nav className='navbar bg-white navbar-light navbar-expand-md fixed-top'>
+            <nav className='navbar bg-white navbar-light navbar-expand-md'>
                 <div className='container-fluid'>
-                    <a href=''>
+                    <Link to="/">
                         <h2 className='logo'>MEDIGO</h2>
-                    </a>
+                    </Link>
                     <button className="navbar-toggler" data-bs-target="#ab" data-bs-toggle="collapse">
                         <i className="fa-solid fa-bars imp"></i>
                     </button>
